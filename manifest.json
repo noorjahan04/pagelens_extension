@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "PageLens - AI Page Assistant",
+  "version": "1.0.0",
+  "description": "Opens a side panel that reads the page you're on. Summarize it, explain its key concepts, or ask it questions.",
+  "permissions": ["sidePanel", "activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "action": {
+    "default_title": "Open PageLens",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}
